@@ -68,11 +68,12 @@ ggplot(Whickham, aes(x = smoker)) +
 
 ```{r plot_age}
 ggplot(Whickham, aes(x = age)) +
-  geom_bar()
+  geom_boxplot()
 ```
 
 
-4. 
+4.
+Smoking is a bad habit if it continues. It can lead to death and increase the proportion.
 
 ```{r plot_smokeVSincome_1}
 ggplot(data=Whickham, aes(x=smoker, y=outcome, color=outcome)) + geom_bar(stat="identity")
